@@ -1,0 +1,212 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body.darkmode{
+    background-color: rgb(16, 16, 16);
+}
+
+body.darkmode #buton{
+    background-color: white;
+    color: rgb(24, 24, 24);
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(57, 57, 57);
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+h2.darkmode{
+    color: rgb(255, 255, 255);
+}
+
+#card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(242, 242, 242);
+    padding: 30px 110px 50px 110px;
+    border-radius: 30px;
+}
+
+#card.darkmode{
+    background-color: rgb(28, 28, 28);
+}
+
+
+#info.darkmode{
+    color: white;
+}
+
+#buton{
+    border: none;
+    background-color:rgb(39, 39, 39);
+    color: white;
+    box-shadow: 0 0 20px 5px rgba(39, 39, 39, 0.1);
+    padding: 19px;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+
+#buton:hover{
+    background-color:rgb(39, 39, 39);
+    box-shadow: 0 0 50px 5px rgba(220, 178, 255, 0.2);
+    color: white;
+     
+}
+
+
+
+#info{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(13, 7, 8);
+    font-size: 18px;
+}
+
+#profile{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.4s ease;
+}
+
+#profile:hover{
+    border-radius: 25px;
+    transform: scale(1.1);
+}
+
+#alt{
+     font-weight: normal;
+}
+
+#altbaslik{
+    font-size: 16px;
+}
+
+#mode{
+    border: none;
+    background-color:rgb(241, 241, 241);
+    color: black;
+    box-shadow: 0 0 20px 5px rgba(148, 137, 154, 0.2);
+    padding: 10px 22px 10px 20px;
+    border-radius: 50px;
+
+}
+
+#mode.darkmode{
+    background-color:rgb(128, 128, 128);
+    box-shadow: 0px 0px 44px 2px rgba(219, 215, 255, 0.4);
+    color: white;
+}
+
+.txtback{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px 60px 10px 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    box-shadow: 0px 0px 30px 5px rgba(220, 211, 250, 0.3);
+}
+
+.txtback.darkmode{
+    background-color: rgb(113, 113, 113);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 50px 2px rgba(163, 153, 255, 0.2);
+}
+
+
+
+
+#ftr.darkmode{
+    color: white;
+}
+
+#spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #212121;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#spinner.darkmode {
+  border: 6px solid #181818;
+  border-top: 6px solid #d6d1e3;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  #card {
+    width: 100%;
+      max-width: 500px;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  h2 {
+    flex-direction: column;
+    font-size: 24px;
+    gap: 10px;
+  }
+
+  #buton, #mode {
+    font-size: 14px;
+    padding: 12px 18px;
+    margin-top: 10px;
+  }
+
+  #profile {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .txtback {
+    padding: 8px 20px;
+    font-size: 14px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  #info {
+    font-size: 16px;
+  }
+
+  #altbaslik {
+    font-size: 14px;
+  }
+
+}
+

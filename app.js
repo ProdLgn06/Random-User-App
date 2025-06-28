@@ -42,7 +42,7 @@ function mode(){
         mode.textContent = "☀︎ Light";
     }
     else {
-        mode.textContent = "⏾ Dark";
+        mode.innerHTML = '<i class="fa-solid fa-moon"></i> Dark';
     }
     const h2 = document.querySelector("h2");
     
